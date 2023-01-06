@@ -2,8 +2,17 @@
 class Database {
 	public static $db;
 	public static $con;
+
+	private $user = "root";
+	private $pass = "";
+	private $host = "localhost";
+	private $ddbb = "katanalite";
+
 	function Database(){
-		$this->user="root";$this->pass="";$this->host="localhost";$this->ddbb="katanalite";
+		$this->user="root";
+		$this->pass="";
+		$this->host="localhost";
+		$this->ddbb="katanalite";
 	}
 
 	function connect(){

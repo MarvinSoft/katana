@@ -103,7 +103,7 @@ if($_SESSION["admin_id"]!=""){
 if(isset($_SESSION["admin_id"])){
   View::load("index");
 }else{
-  Action::execute("login",array());
+  (new Action)->execute("login",array());
 }
 
 ?>

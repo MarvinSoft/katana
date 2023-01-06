@@ -2,6 +2,11 @@
 class ClientData {
 	public static $tablename = "client";
 
+	public $name = "";
+	public $lastname = "";
+	public $email = "";
+	public $password = "";
+	public $created_at = "";
 
 
 	public function ClientData(){
@@ -9,7 +14,7 @@ class ClientData {
 		$this->lastname = "";
 		$this->email = "";
 		$this->password = "";
-		$this->created_at = "NOW()";
+		$this->created_at = "";
 	}
 
 	public function add(){
